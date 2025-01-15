@@ -1,0 +1,185 @@
+ 
+      [
+        {
+            "id": 1,
+            "firstname": "Domenick",
+            "lastname": "Ferry",
+            "avatar": "https://raw.githubusercontent.com/Ashwinvalento/cartoon-avatar/master/lib/images/female/1.png",
+            "job": "Central Data Orchestrator",
+            "gender": "male",
+            "company": "Rath and Sons",
+            "phonenumber": "(786) 780-9950 x122",
+            "address": {
+                "zip": "90748",
+                "city": "North Ritamouth",
+                "streetName": "Abbott Rapids",
+                "country": "Saudi Arabia",
+                "state": "Mississippi",
+                "latitude": "84.5282",
+                "longitude": "77.0339"
+            }
+        }, {
+            "id": 2,
+            "firstname": "Nelle",
+            "lastname": "McKenzie",
+            "avatar": "https://raw.githubusercontent.com/Ashwinvalento/cartoon-avatar/master/lib/images/female/2.png",
+            "job": "Human Marketing Technician",
+            "gender": "male",
+            "company": "Marks - Heaney",
+            "phonenumber": "1-746-817-7922 x06337",
+            "address": {
+                "zip": "01872-8700",
+                "city": "Mervintown",
+                "streetName": "Dora Forest",
+                "country": "Libyan Arab Jamahiriya",
+                "state": "South Dakota",
+                "latitude": "45.3161",
+                "longitude": "68.3180"
+            }
+        }, {
+            "id": 3,
+            "firstname": "Samanta",
+            "lastname": "Treutel",
+            "avatar": "https://raw.githubusercontent.com/Ashwinvalento/cartoon-avatar/master/lib/images/male/3.png",
+            "job": "District Web Engineer",
+            "gender": "male",
+            "company": "Nitzsche - Hudson",
+            "phonenumber": "339.412.9258 x3143",
+            "address": {
+                "zip": "52352",
+                "city": "New Jayneberg",
+                "streetName": "Gabe Harbor",
+                "country": "Tuvalu",
+                "state": "New Jersey",
+                "latitude": "15.2051",
+                "longitude": "-105.7495"
+            }
+        }, {
+            "id": 4,
+            "firstname": "Boris",
+            "lastname": "Homenick",
+            "avatar": "https://raw.githubusercontent.com/Ashwinvalento/cartoon-avatar/master/lib/images/male/4.png",
+            "job": "Human Integration Producer",
+            "gender": "male",
+            "company": "Murray, Upton and Fritsch",
+            "phonenumber": "968-879-9148",
+            "address": {
+                "zip": "38935",
+                "city": "Koeppport",
+                "streetName": "Yvonne Hollow",
+                "country": "French Guiana",
+                "state": "Maryland",
+                "latitude": "-47.4230",
+                "longitude": "88.0264"
+            }
+        }, {
+            "id": 5,
+            "firstname": "Gail",
+            "lastname": "Wunsch",
+            "avatar": "https://raw.githubusercontent.com/Ashwinvalento/cartoon-avatar/master/lib/images/male/5.png",
+            "job": "Central Response Representative",
+            "gender": "female",
+            "company": "Klocko LLC",
+            "phonenumber": "(739) 646-7492 x84878",
+            "address": {
+                "zip": "07014-1336",
+                "city": "Americaland",
+                "streetName": "Jackeline Way",
+                "country": "South Georgia and the South Sandwich Islands",
+                "state": "Connecticut",
+                "latitude": "61.5518",
+                "longitude": "156.7394"
+            }
+        }, {
+            "id": 6,
+            "firstname": "Maria",
+            "lastname": "Luettgen",
+            "avatar": "https://raw.githubusercontent.com/Ashwinvalento/cartoon-avatar/master/lib/images/male/6.png",
+            "job": "Future Intranet Administrator",
+            "gender": "female",
+            "company": "Emard - Kilback",
+            "phonenumber": "495-227-6551",
+            "address": {
+                "zip": "29271",
+                "city": "South Anyashire",
+                "streetName": "Mayer Ville",
+                "country": "Saint Martin",
+                "state": "Oregon",
+                "latitude": "-37.8998",
+                "longitude": "-142.6497"
+            }
+        }, {
+            "id": 7,
+            "firstname": "Jessika",
+            "lastname": "Beier",
+            "avatar": "https://raw.githubusercontent.com/Ashwinvalento/cartoon-avatar/master/lib/images/male/7.png",
+            "job": "Regional Assurance Orchestrator",
+            "gender": "female",
+            "company": "Schimmel, Kertzmann and Gaylord",
+            "phonenumber": "(698) 506-3876 x985",
+            "address": {
+                "zip": "90181-9700",
+                "city": "Lake Hectorport",
+                "streetName": "Dibbert Trafficway",
+                "country": "China",
+                "state": "Kentucky",
+                "latitude": "-79.9617",
+                "longitude": "170.5949"
+            }
+        }, {
+            "id": 8,
+            "firstname": "Weston",
+            "lastname": "Herzog",
+            "avatar": "https://raw.githubusercontent.com/Ashwinvalento/cartoon-avatar/master/lib/images/male/8.png",
+            "job": "Future Metrics Engineer",
+            "gender": "male",
+            "company": "Hoppe, Rosenbaum and Williamson",
+            "phonenumber": "(643) 972-8540 x2993",
+            "address": {
+                "zip": "92693-5070",
+                "city": "New Bradford",
+                "streetName": "Zboncak Underpass",
+                "country": "Sudan",
+                "state": "Arkansas",
+                "latitude": "70.0331",
+                "longitude": "124.0693"
+            }
+        }, {
+            "id": 9,
+            "firstname": "Elinor",
+            "lastname": "Nienow",
+            "avatar": "https://raw.githubusercontent.com/Ashwinvalento/cartoon-avatar/master/lib/images/female/9.png",
+            "job": "Internal Response Analyst",
+            "gender": "male",
+            "company": "Bednar - McLaughlin",
+            "phonenumber": "492.809.9004",
+            "address": {
+                "zip": "77663-7981",
+                "city": "North Stephon",
+                "streetName": "Quigley Keys",
+                "country": "Togo",
+                "state": "New Jersey",
+                "latitude": "-7.4387",
+                "longitude": "150.0124"
+            }
+        }, {
+            "id": 10,
+            "firstname": "Bridie",
+            "lastname": "Cremin",
+            "avatar": "https://raw.githubusercontent.com/Ashwinvalento/cartoon-avatar/master/lib/images/female/10.png",
+            "job": "Dynamic Brand Liaison",
+            "gender": "female",
+            "company": "Conroy, Bins and Feeney",
+            "phonenumber": "1-906-300-7846 x8569",
+            "address": {
+                "zip": "79645-0677",
+                "city": "Ryanhaven",
+                "streetName": "Haven Crest",
+                "country": "Norway",
+                "state": "Missouri",
+                "latitude": "-51.5505",
+                "longitude": "-32.5204"
+            }
+        }
+    ] 
+ 

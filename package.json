@@ -1,0 +1,24 @@
+{
+  "name": "customers-data-api",
+  "version": "1.0.0",
+  "description": "A simple API for managing customers and products",
+  "main": "functions/server.js",
+  "scripts": {
+    "start": "node functions/server.js",
+    "start:local": "node functions/server.js && echo 'Server started on local environment'",
+    "start:standalone": "node functions/server.js",
+    "deploy": "netlify deploy"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "customers-data-api": "file:",
+    "express": "^4.21.2",
+    "serverless-http": "^3.2.0"
+  },
+  "devDependencies": {
+    "netlify-cli": "^12.0.0"
+  },
+  "engines": {
+    "node": ">=14.x <=20.x"
+  }
+}
