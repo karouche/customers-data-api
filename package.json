@@ -7,7 +7,9 @@
     "start": "node functions/server.js",
     "start:local": "node functions/server.js && echo 'Server started on local environment'",
     "start:standalone": "node functions/server.js",
-    "deploy": "netlify deploy"
+    "deploy": "netlify deploy",
+    "build": "netlify build",
+    "dev": "netlify dev"
   },
   "dependencies": {
     "cors": "^2.8.5",
