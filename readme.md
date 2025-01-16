@@ -25,17 +25,4 @@ node .\server.js
    ```bash
    netlify deploy --prod
    ```
-
-6. Configure the build and start commands:
-   - Go to your site settings on Netlify.
-   - Navigate to the "Build & Deploy" section.
-   - Under "Build settings", set the "Build command" to:
-     ```bash
-     npm run build
-     ```
-   - Set the "Publish directory" to the directory where your build output is located (e.g., `dist` or `build`).
-   - If your project requires a start command, add it under "Advanced build settings" > "Build environment variables" as a new variable:
-     - Key: `START_CMD`
-     - Value: `node server.js`
-
-7. Trigger a new deploy from the Netlify dashboard or by pushing changes to your repository.
+ 
