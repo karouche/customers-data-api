@@ -1,6 +1,4 @@
-run this : 
-node .\server.js
-
+  
 ## Deploying on Netlify
 
 1. Create a Netlify account at [Netlify](https://www.netlify.com/).
