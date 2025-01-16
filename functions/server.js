@@ -1,95 +1,45 @@
 const express = require('express');
 const serverless = require('serverless-http');
-const cors = require('cors');
-const fs = require('fs');
-const path = require('path');
+const cors = require("cors");
 
 const app = express();
 app.use(cors());
 app.use(express.json());
 
-const USERS_FILE_PATH = process.env.USERS_FILE_PATH || path.join(__dirname, '../data/users.json');
-const PRODUCTS_FILE_PATH = process.env.PRODUCTS_FILE_PATH || path.join(__dirname, '../data/products.json');
+// Données intégrées directement dans le code
+const users = require("./data/users.json");
+const products = require("./data/products.json");
 
-app.get('/users', (req, res) => {
-  fs.readFile(USERS_FILE_PATH, 'utf8', (err, data) => {
-    if (err) {
-      console.error('Error reading users data:', err);
-       res.status(500).send(`Error reading users data from ${USERS_FILE_PATH}`);
+app.get("/users", (req, res) => {
+  const userId = req.query.id;  
+  if (userId) {
+    const user = users.find((u) => u.id === parseInt(userId));
+    if (!user) {
+      res.status(404).send("User not found");
       return;
     }
-    try {
-      const users = JSON.parse(data);
-      res.send(users);
-    } catch (parseErr) {
-      console.error('Error parsing users data:', parseErr);
-      res.status(500).send('Error parsing users data');
-    }
-  });
+    res.send(user);
+    return;
+  }
+  res.send(users);
 });
+ 
 
-app.get('/users/:id', (req, res) => {
-  const userId = req.params.id;
-  fs.readFile(USERS_FILE_PATH, 'utf8', (err, data) => {
-    if (err) {
-      console.error('Error reading users data:', err);
-      res.status(500).send('Error reading users data');
+app.get("/products", (req, res) => {
+  const userId = req.query.userId;
+  if (userId) {
+    const userProducts = products.filter((p) => p.userId === parseInt(userId));
+    if (userProducts.length === 0) {
+      res.status(404).send("No products found for this user");
       return;
     }
-    try {
-      const users = JSON.parse(data);
-      const user = users.find(u => u.id === userId);
-      if (!user) {
-        res.status(404).send('User not found');
-        return;
-      }
-      res.send(user);
-    } catch (parseErr) {
-      console.error('Error parsing users data:', parseErr);
-      res.status(500).send('Error parsing users data');
-    }
-  });
+    res.send(userProducts);
+    return;
+  }
+  res.send(products);
 });
 
-app.get('/products', (req, res) => {
-  fs.readFile(PRODUCTS_FILE_PATH, 'utf8', (err, data) => {
-    if (err) {
-      console.error('Error reading products data:', err);
-      res.status(500).send('Error reading products data');
-      return;
-    }
-    try {
-      const products = JSON.parse(data);
-      res.send(products);
-    } catch (parseErr) {
-      console.error('Error parsing products data:', parseErr);
-      res.status(500).send('Error parsing products data');
-    }
-  });
-});
-
-app.get('/products/:id', (req, res) => {
-  const productId = req.params.id;
-  fs.readFile(PRODUCTS_FILE_PATH, 'utf8', (err, data) => {
-    if (err) {
-      console.error('Error reading products data:', err);
-      res.status(500).send('Error reading products data');
-      return;
-    }
-    try {
-      const products = JSON.parse(data);
-      const product = products.find(p => p.id === productId);
-      if (!product) {
-        res.status(404).send('Product not found');
-        return;
-      }
-      res.send(product);
-    } catch (parseErr) {
-      console.error('Error parsing products data:', parseErr);
-      res.status(500).send('Error parsing products data');
-    }
-  });
-});
+ 
 
 const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => {
